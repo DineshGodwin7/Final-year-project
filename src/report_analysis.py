@@ -161,8 +161,8 @@ def process_report_with_model(text):
     }
 """
 
-import pytesseract
-from PyPDF2 import PdfReader
+import pytesseract # type: ignore
+from PyPDF2 import PdfReader # type: ignore
 from transformers import BertTokenizer
 
 def analyze_report(file_path):
